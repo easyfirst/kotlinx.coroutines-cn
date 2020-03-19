@@ -309,6 +309,7 @@ Completed in 1085 ms
 -->并发的调用 `doSomethingUsefulOne` 与 `doSomethingUsefulTwo` 并且返回它们两个的结果之和。
 由于 [async] 被定义为了 [CoroutineScope] 上的扩展，我们需要将它写在<!--
 -->作用域内，并且这是 [coroutineScope] 函数所提供的：
+上述两行是否这样表达更顺畅些：由于 async协程构建器 被定义为 CoroutineScope 的扩展，我们需要将它写在coroutineScope 函数所提供的作用域内。：
 
 <div class="sample" markdown="1" theme="idea" data-highlight-only>
 
